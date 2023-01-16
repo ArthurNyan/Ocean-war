@@ -1,0 +1,81 @@
+/* reset */
+html, body, div, span, h1, h2, p, a, img, strong, ul, li, button, footer, header {margin: 0; padding: 0; border: 0; vertical-align: baseline;}
+*, :after, :before {-webkit-box-sizing: border-box; box-sizing: border-box;}
+a, button, div {outline: none;}
+ul {list-style: none;}
+img {border: none;}
+
+/* grid */
+html, body, .wrap {height: 100%;}
+.wrap {width: 1024px; margin: 0 auto; padding: 20px;}
+
+.ship, .icon-field, .btn-play {background: url('../img/sprite.png') no-repeat;}
+
+/* typography */
+body {font: normal 18px SegoePrint; line-height: 24px; color: #4530af;}
+p {margin-bottom: 10px;}
+
+/* buttons */
+.btn-play {width: 144px; height: 45px; font-family: SegoePrint; font-size: 24px; line-height: 40px; color: #4530af; text-align: center; background-position: 0 -150px; cursor: pointer;}
+.btn-newgame { font-size: 19px; margin-top: 10px; }
+
+/* display */
+.flex {display: flex;}
+
+/*** CONTENT ***/
+
+.battlefield {max-width: 860px; height: 563px; position: relative; margin: 0 auto; background: url('../img/grid.png') repeat;}
+.text-top {height: 66px; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 7px;}
+.service-row {text-align: center;}
+.service-text {color: #c00; padding-top: 10px;}
+
+.outer {margin-bottom: 21px; padding-left: 38px;}
+.field {width: 366px; height: 363px; flex-shrink: 0; position: relative; background: url('../img/bg_play_field.png') no-repeat;}
+.field-computer {margin-left: 31px;}
+
+.ships {width: 330px; height: 330px; position: relative; left: 29px; top: 27px;}
+.ship {height: 35px; position: absolute;}
+.vertical {transform: rotate(90deg); transform-origin: 17.5px 17.5px;}
+
+.fourdeck {width: 134px; background-position: 0 0;}
+.fourdeck.success {background-position: 0 -50px;}
+.fourdeck.unsuccess {background-position: 0 -100px;}
+.tripledeck {width: 101px; background-position: -150px 0;}
+.tripledeck.success {background-position: -150px -50px;}
+.tripledeck.unsuccess {background-position: -150px -100px;}
+.doubledeck {width: 68px; background-position: -270px 0;}
+.doubledeck.success {background-position: -270px -50px;}
+.doubledeck.unsuccess {background-position: -270px -100px;}
+.singledeck {width: 35px; background-position: -360px 0;}
+.singledeck.success {background-position: -360px -50px;}
+.singledeck.unsuccess {background-position: -360px -100px;}
+
+.instruction {margin-left: 26px; -webkit-user-select: none; user-select: none;}
+.type-placement-box {line-height: 34px; padding-bottom: 18px;}
+	.type-placement-box .link {font-size: 20px; border-bottom: dashed 2px #4530af; cursor: pointer;}
+
+.initial-ships li {height: 35px; position: relative; overflow: hidden; margin-top: 31px;}
+.initial-ships .ship {left: 0; top: 0; float: left; cursor: move;}
+.initial-ships .tripledeck1 {left: 164px;}
+.initial-ships .tripledeck2 {left: 297px;}
+.initial-ships .doubledeck2 {left: 99px;}
+.initial-ships .doubledeck3 {left: 197px;}
+.initial-ships .singledeck2 {left: 65px;}
+.initial-ships .singledeck3 {left: 131px;}
+.initial-ships .singledeck4 {left: 197px;}
+
+.icon-field {width: 33px; height: 33px; display: block; position: absolute; z-index: 5;}
+.dot {background-position: -410px 0;}
+.red-cross {background-position: -410px -50px;}
+.shaded-cell {background-position: -410px -100px;}
+.shaded-cell_red {background-position: -410px -140px;}
+.explosion { background-position: -150px -150px; z-index: 6; opacity: 0; transform: scale(.2); }
+
+@keyframes Explosion {
+	0% { opacity: 0; transform: scale(.2); }
+	50% { opacity: 1; transform: scale(1); }
+	100% { opacity: 0; }
+}
+.explosion.active { animation-name: Explosion; animation-duration: 0.4s; transform: scale(1); }
+
+

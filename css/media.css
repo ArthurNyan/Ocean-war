@@ -1,0 +1,14 @@
+
+@media screen {
+    .flex{
+        display: block;
+    }
+    .field-computer{
+        margin-left: 0;
+        margin-top: 33px;
+    }
+    .battlefield{
+        max-width: 496px; 
+        height: 926px;
+    }
+}

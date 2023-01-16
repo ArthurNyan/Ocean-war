@@ -16,7 +16,7 @@ body {font: normal 18px SegoePrint; line-height: 24px; color: #4530af;}
 p {margin-bottom: 10px;}
 
 /* buttons */
-.btn-play {max-width: 144px; height: 45px; font-family: SegoePrint; font-size: 24px; line-height: 40px; color: #4530af; text-align: center; background-position: 0 -150px; cursor: pointer;}
+.btn-play {width: 144px; height: 45px; font-family: SegoePrint; font-size: 24px; line-height: 40px; color: #4530af; text-align: center; background-position: 0 -150px; cursor: pointer;}
 .btn-newgame { font-size: 19px; margin-top: 10px; }
 
 /* display */
@@ -33,20 +33,20 @@ p {margin-bottom: 10px;}
 .field {max-width: 366px; height: 363px; flex-shrink: 0; position: relative; background: url('../img/bg_play_field.png') no-repeat;}
 .field-computer {margin-left: 31px;}
 
-.ships {max-width: 330px; height: 330px; position: relative; left: 29px; top: 27px;}
+.ships {width: 330px; height: 330px; position: relative; left: 29px; top: 27px;}
 .ship {height: 35px; position: absolute;}
 .vertical {transform: rotate(90deg); transform-origin: 17.5px 17.5px;}
 
-.fourdeck {max-width: 134px; background-position: 0 0;}
+.fourdeck {width: 134px; background-position: 0 0;}
 .fourdeck.success {background-position: 0 -50px;}
 .fourdeck.unsuccess {background-position: 0 -100px;}
 .tripledeck {max-width: 101px; background-position: -150px 0;}
 .tripledeck.success {background-position: -150px -50px;}
 .tripledeck.unsuccess {background-position: -150px -100px;}
-.doubledeck {max-width: 68px; background-position: -270px 0;}
+.doubledeck {width: 68px; background-position: -270px 0;}
 .doubledeck.success {background-position: -270px -50px;}
 .doubledeck.unsuccess {background-position: -270px -100px;}
-.singledeck {max-width: 35px; background-position: -360px 0;}
+.singledeck {width: 35px; background-position: -360px 0;}
 .singledeck.success {background-position: -360px -50px;}
 .singledeck.unsuccess {background-position: -360px -100px;}
 
@@ -64,7 +64,7 @@ p {margin-bottom: 10px;}
 .initial-ships .singledeck3 {left: 131px;}
 .initial-ships .singledeck4 {left: 197px;}
 
-.icon-field {max-width: 33px; height: 33px; display: block; position: absolute; z-index: 5;}
+.icon-field {width: 33px; height: 33px; display: block; position: absolute; z-index: 5;}
 .dot {background-position: -410px 0;}
 .red-cross {background-position: -410px -50px;}
 .shaded-cell {background-position: -410px -100px;}
